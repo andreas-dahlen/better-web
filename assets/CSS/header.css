@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+.header-container {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: var(--header-gradient);
+    padding: 0.7em 4em;
+    height: 80px;
+}
+header::before{
+    content: "";
+    position:absolute;
+    inset: 0;
+    background: linear-gradient(to right, maroon,orange);
+    filter: blur(20px);
+    /* border: 1em solid orange; */
+    z-index: -1;
+}
