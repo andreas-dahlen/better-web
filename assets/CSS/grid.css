@@ -1,0 +1,33 @@
+/* .seminar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+} */
+
+.three-days, .four-days {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 400px) {
+  .three-days {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .four-days {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .three-days {
+    grid-template-columns: repeat(3, 1fr);  
+  }
+  .four-days {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .four-days {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
