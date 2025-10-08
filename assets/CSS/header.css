@@ -14,12 +14,11 @@ header {
     padding: 0.7em 4em;
     height: 80px;
 }
-header::before{
+/* header::before{
     content: "";
     position:absolute;
     inset: 0;
     background: linear-gradient(to right, maroon,orange);
     filter: blur(20px);
-    /* border: 1em solid orange; */
     z-index: -1;
-}
+} */
