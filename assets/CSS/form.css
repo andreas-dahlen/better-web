@@ -1,10 +1,18 @@
+.hero-container-form {
+    position: relative;
+    height: 100vh;
+    background: url(/assets/images/Gemini_Generated_Image_form.png) center / cover no-repeat;
+
+}
+
 .form-wrapper {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    /* margin: 0 0 0 auto; */
     width: 80%;
     max-width: 40em;
     margin: auto auto;
+    justify-self: center;
 }
 
 .contact {
@@ -32,9 +40,18 @@ form textarea {
     margin-top: 4px;
     padding-top: 8px;
 }
-.radio-checkbox {
+.radio-and-checkbox {
     padding-top: 15px;
+    & > input {
+        width: 20px;
+        height: 20px;
+        margin: 0 2em 0 0.5em;
+    }
+    & > label {
+        color: aliceblue;
+    }
 }
+
 legend {
     margin-bottom: 5px;
 }
