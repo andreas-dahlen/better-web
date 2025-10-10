@@ -1,0 +1,40 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 0 0 auto; */
+    width: 80%;
+    max-width: 40em;
+    margin: auto auto;
+}
+
+.contact {
+    /* display: flex; */
+    /* justify-items: center; */
+}
+
+form label {
+    padding-top: 1em;
+}
+
+.error-message {
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+    color: red;
+    font-style: italic;
+    font-size: small;
+}
+
+form input,
+form textarea {
+    margin-top: 4px;
+    padding-top: 8px;
+}
+.radio-checkbox {
+    padding-top: 15px;
+}
+legend {
+    margin-bottom: 5px;
+}
