@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form-sheet</title>
+    <link rel="stylesheet" href="/assets/CSS/base.css">
+    <link rel="stylesheet" href="/assets/CSS/main.css">
+    <link rel="stylesheet" href="/assets/CSS/grid.css">
+    <link rel="stylesheet" href="/assets/CSS/footer.css">
+    <link rel="stylesheet" href="/assets/CSS/header.css">
+    <link rel="stylesheet" href="/assets/CSS/form.css">
 </head>
 <body>
-    
+
+    <header class="with-before">
+        <div class="header-container">
+            <img src="" alt="">
+            <nav class="right">
+                <a href="../../index.html">1</a>
+                <a href="/assets/HTML/form.html">2</a>
+                <a href="">3</a>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="contact">
+        <h1> Form </h1>
+        <form action="#" class="form-wrapper">
+            
+                <label for="fname">First name*</label>
+                <input type="text" id="fname" name="name" value="" required>
+
+                <span class="error-message"> Enter your first name to continue</span>
+                
+                <label for="lname">Last name*</label>
+                <input type="text" id="lname" name="name"  value="" required>
+
+                <span class="error-message"> Enter your last name to continue</span>
+                
+                <label for="address">address</label>
+                <input type="text" id="address" name="address">
+                
+                <label for="email">E-mail adress*</label>
+                <input type="email" id="email" name="email"  value="" required>
+
+                <span class="error-message"> Enter your email address to continue</span>
+
+            <div class="radio-checkbox">
+                <legend> Conferance days</legend>
+
+                <label for="days">Day 1</label>
+                <input type="checkbox" id="days" name="day1"  value="day1">
+                
+                
+                <label for="days">Day 2</label>
+                <input type="checkbox" id="days" name="day2"  value="day2">
+                
+                
+                <label for="days">Day 3</label>
+                <input type="checkbox" id="days" name="day3"  value="day3">
+            </div>
+
+            <div class="radio-checkbox">
+                <legend>Food options</legend>
+
+                <input type="radio" id="meat" name="food" value="meat">
+                <label for="meat">Meat</label>
+
+                <input type="radio" id="fish" name="food" value="fish">
+                <label for="fish">Fish</label>
+
+                <input type="radio" id="veg" name="food" value="veg">
+                <label for="veg">Vegetarian</label>
+            </div>
+
+                <label for="extra-text"> Allergies</label>
+                <textarea name="" id="extra-text" rows="4" ></textarea>
+
+            <div>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+    </section>
+            
+
+    <!-- Man kan anmäla sig till hela konferensen, eller köpa dagspass för specifika dagar. (Man kan vara med på 1, 2 eller 3 dagar. Dagarna måste inte vara i följd.)
+
+En anmälan ska även innehålla namn, adress och e-postadress.
+Man kan beställa mat, som kan vara antingen kött, fisk eller vegetarisk. Med möjlighet att anmäla allergier.
+
+Alla formulärfält ska valideras med HTML-attribut. Använd pseudoklassen :invalid i CSS för att styla fält som har felaktiga värden. -->
+
+
+</main>
+
+        <footer>
+           <p> 2025 school assignement </p>
+        </footer>
+
 </body>
 </html>
