@@ -8,16 +8,39 @@
 }
 
 :root {
-    --header-gradient:linear-gradient(to right, orange, maroon);
+    --purple-blue-gradient:linear-gradient(to right, rgb(23, 0, 193), rgb(124, 0, 149));
     --background-color-main: rgb(208, 243, 255);
+    --before-gradient:linear-gradient(to right, rgb(0, 229, 255),rgb(255, 0, 154));
+    --nav-button-color:linear-gradient(to right, rgb(6, 1, 99), rgb(89, 0, 148));
+    --nav-button-hover:linear-gradient(to right, rgb(93, 88, 175), rgb(148, 82, 192));
+    --big-text-col:linear-gradient(to bottom, rgb(1, 255, 247), rgb(197, 80, 255));
+    --button-text-col:linear-gradient(to bottom, rgb(180, 255, 254), rgb(219, 146, 255));
 }
 
 .with-before::before{
     content: "";
     position:absolute;
     inset: 0;
-    background: linear-gradient(to right, maroon,orange);
+    background: var(--before-gradient);
     filter: blur(40px);
     z-index: -1;
 }
 
+    .text-shadow {
+        filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+}
+.big-style {
+background: var(--big-text-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 2.3em;
+}
+.text-style {
+    background: var(--button-text-col);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+}
