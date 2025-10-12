@@ -1,8 +1,7 @@
-.hero-container-form {
+.hero-container {
     position: relative;
     height: 100vh;
     background: url(/assets/images/Gemini_Generated_Image_form.png) center / cover no-repeat;
-
 }
 
 .form-wrapper {
@@ -40,6 +39,7 @@ form textarea {
     margin-top: 4px;
     padding-top: 8px;
 }
+
 .radio-and-checkbox {
     padding-top: 15px;
     & > input {
