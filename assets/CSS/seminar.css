@@ -8,6 +8,7 @@ main {
     background: url(/assets/images/Gemini_Generated_Image_seminar.png) center / cover no-repeat;
     z-index: 0;
 }
+
 article {
     position: relative;
     margin-top: -90vh;
@@ -26,10 +27,6 @@ h1, h2, h3 {
 h1, h2 {
       margin-top: 2em;
 }
-
-/* h2 {
-    justify-self: center;
-} */
 
 .seminar-container {
     position: relative;
