@@ -9,9 +9,8 @@
 
 :root {
     --purple-blue-gradient:linear-gradient(to right, rgb(23, 0, 193), rgb(124, 0, 149));
-    --background-color-main: linear-gradient(45deg, rgb(3, 238, 255), rgb(0, 0, 0));
     --before-gradient:linear-gradient(to right, rgb(0, 229, 255),rgb(255, 0, 154));
-    --nav-button-color:linear-gradient(to right, rgb(6, 1, 99), rgb(89, 0, 148));
+    --nav-button-color:linear-gradient(to right, rgb(89, 0, 148), rgb(6, 1, 99));
     --nav-button-hover:linear-gradient(to right, rgb(93, 88, 175), rgb(148, 82, 192));
     --big-text-col:linear-gradient(to bottom, rgb(1, 255, 247), rgb(197, 80, 255));
     --button-text-col:linear-gradient(to bottom, rgb(180, 255, 254), rgb(219, 146, 255));
@@ -35,7 +34,7 @@ main {
     content: "";
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 30%;
     bottom: 0;
     background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
 }
@@ -51,6 +50,7 @@ main {
     -webkit-text-fill-color: transparent;
     color: transparent;
     font-size: 2.3em;
+    white-space: nowrap;
 }
 
 .text-style {

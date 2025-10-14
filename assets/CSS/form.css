@@ -6,17 +6,13 @@
 
 .form-wrapper {
     position: absolute;
+    top: 10em;
     display: flex;
     flex-direction: column;
     width: 80%;
     max-width: 40em;
     margin: auto auto;
     justify-self: center;
-}
-
-.contact {
-    /* display: flex; */
-    /* justify-items: center; */
 }
 
 form label {
@@ -38,6 +34,7 @@ form input,
 form textarea {
     margin-top: 4px;
     padding-top: 8px;
+    color: black;
 }
 
 .radio-and-checkbox {
