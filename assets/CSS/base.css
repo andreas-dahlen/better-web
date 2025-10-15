@@ -21,6 +21,10 @@ main {
     background: black;
 }
 
+body {
+    background: black;
+}
+
 .with-before::before{
     content: "";
     position:absolute;
@@ -59,4 +63,5 @@ main {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    font-weight: 600;
 }
