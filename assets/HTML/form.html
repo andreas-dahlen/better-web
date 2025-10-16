@@ -16,7 +16,7 @@
         <div class="header-container">
                 <a href="../../index.html" class="logo-container">
                     <img  src="/assets/images/Gemini_Generated_Image_logo.png" alt="Better Web Logo" href="index.html">
-                        <span class="text-shadow big-style">Better Web</span>
+                    <span class="text-shadow big-style">Better Web</span>
                 </a>
             <nav>
                 <a href="../../index.html">
@@ -33,78 +33,101 @@
     </header>
 
 <main>
-    <!-- <section class="contact"> -->
+
     <div class="hero-container"></div> 
 
     <form action="#" class="form-wrapper">
-        <h1> Form </h1>
-            <label for="fname">First name*</label>
+        <h1 class="text-shadow big-style"> Form </h1>
+        <div class="basic-wrap form-black">
+            <label for="fname" class="text-shadow text-style">First name*</label>
             <input type="text" id="fname" name="name" value="" required>
-
             <span class="error-message"> Enter your first name to continue</span>
-            
-            <label for="lname">Last name*</label>
+        </div>
+
+        <div class="basic-wrap form-black">
+            <label for="lname" class="text-shadow text-style">Last name*</label>
             <input type="text" id="lname" name="name"  value="" required>
+            <span class="error-message"> Enter your last name to continue</span>   
+        </div>    
 
-            <span class="error-message"> Enter your last name to continue</span>
-            
-            <label for="address">address</label>
-            <input type="text" id="address" name="address">
-            
-            <label for="email">E-mail*</label>
+        <div class="basic-wrap form-black">
+            <label for="address" class="text-shadow text-style">address*</label>
+            <input type="text" id="address" name="address" value="" required>
+            <span class="error-message"> Enter your adress to continue</span>
+        </div>    
+
+        <div class="basic-wrap form-black">
+            <label for="email" class="text-shadow text-style">E-mail*</label>
             <input type="email" id="email" name="email"  value="" required>
-
             <span class="error-message"> Enter your email to continue</span>
-
-        <div class="radio-and-checkbox">
-            <legend> Conferance days</legend>
-
-            <label for="days">Day 1</label>
-            <input type="checkbox" id="days" name="day1"  value="day1">
-        
-            <label for="days">Day 2</label>
-            <input type="checkbox" id="days" name="day2"  value="day2">
-            
-            <label for="days">Day 3</label>
-            <input type="checkbox" id="days" name="day3"  value="day3">
         </div>
 
-        <div class="radio-and-checkbox">
-            <legend>Food options</legend>
+        <div class="form-black basic-wrap">
+            <fieldset>
+                <legend class="text-shadow text-style">Conference days</legend>  
 
-            <label for="meat">Meat</label>
-            <input type="radio" id="meat" name="food" value="meat">
+                <div class="radio-and-checkbox">
+                    <div>
+                        <input type="checkbox" id="day1" name="day1"  value="day1">
+                        <label for="day1">17/10</label>
+                    </div>
 
-            <label for="fish">Fish</label>
-            <input type="radio" id="fish" name="food" value="fish">
+                    <div>
+                        <input type="checkbox" id="day2" name="day2"  value="day2">
+                        <label for="day2">18/10</label>
+                    </div>
 
-            <label for="veg">Vegetarian</label>
-            <input type="radio" id="veg" name="food" value="veg">
+                    <div>
+                        <input type="checkbox" id="day3" name="day3"  value="day3">
+                        <label for="day3">19/10</label>
+                    </div>
+                </div>
+            </fieldset>
         </div>
 
-            <label for="extra-text"> Allergies</label>
+        <div class="form-black basic-wrap">
+            <fieldset>
+                <legend class="text-shadow text-style">Food options</legend>
+
+                <div class="radio-and-checkbox">
+                    <div>
+                        <input type="radio" id="meat" name="food" value="meat">
+                        <label for="meat">Meat</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="fish" name="food" value="fish">
+                        <label for="fish">Fish</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="veg" name="food" value="veg">
+                        <label for="veg">Vegetarian</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="basic-wrap form-black">
+            <label for="extra-text" class="text-shadow text-style">Allergies</label>
             <textarea name="" id="extra-text" rows="4" ></textarea>
+        </div>
 
-        <div>
-            <button type="submit" class="submit-button">Submit</button>
+        <div class="button-animation ">
+            <button type="submit" class="text-shadow text-style">Submit</button>
         </div>
     </form>
-    <!-- </section> -->
-         
-
-    <!-- Man kan anmäla sig till hela konferensen, eller köpa dagspass för specifika dagar. (Man kan vara med på 1, 2 eller 3 dagar. Dagarna måste inte vara i följd.)
-
-En anmälan ska även innehålla namn, adress och e-postadress.
-Man kan beställa mat, som kan vara antingen kött, fisk eller vegetarisk. Med möjlighet att anmäla allergier.
-
-Alla formulärfält ska valideras med HTML-attribut. Använd pseudoklassen :invalid i CSS för att styla fält som har felaktiga värden. -->
-
-
 </main>
 
-        <footer>
-           <p> 2025 school assignement </p>
-        </footer>
-
+    <footer>
+        <a href="../../index.html">  
+            <div class="logo-container-big">
+                <img  src="/assets/images/Gemini_Generated_Image_logo.png" alt="Better Web Logo" href="index.html">
+                <span class=" text-shadow big-style footer-logo-text">Better Web</span>              
+            </div>
+        </a>
+        <p class="text-shadow"> 2025 school assignement </p>
+    </footer>
+    
 </body>
 </html>
