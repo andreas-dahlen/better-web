@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+:root {
+    --purple-blue-gradient:linear-gradient(to right, rgb(23, 0, 193), rgb(124, 0, 149));
+    --before-gradient:linear-gradient(to right, rgb(0, 229, 255),rgb(255, 0, 154));
+    --nav-button-color:linear-gradient(to right, rgb(89, 0, 148), rgb(6, 1, 99));
+    --nav-button-hover:linear-gradient(to right, rgb(93, 88, 175), rgb(148, 82, 192));
+    --big-text-col:linear-gradient(to bottom, rgb(1, 255, 247), rgb(197, 80, 255));
+    --button-text-col:linear-gradient(to bottom, rgb(180, 255, 254), rgb(219, 146, 255));
+}
+
+main {
+    padding-top: 5em;
+    background: black;
+}
+
+body {
+    background: black;
+}
+
+.with-before::before{
+    content: "";
+    position:absolute;
+    inset: 0;
+    background: var(--before-gradient);
+    filter: blur(40px);
+    z-index: -1;
+}
+
+.hero-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+}
+
+.text-shadow {
+    filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+}
+
+.big-style {
+    background: var(--big-text-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 2.3em;
+    white-space: nowrap;
+}
+
+.text-style {
+    background: var(--button-text-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+}

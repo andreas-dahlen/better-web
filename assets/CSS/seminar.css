@@ -1,0 +1,94 @@
+main {
+    margin-top: -5em;
+}
+
+.hero-container {
+    position: relative;
+    height: 100vh;
+    background: url(/assets/images/Gemini_Generated_Image_seminar.png) center / cover no-repeat;
+    z-index: 0;
+}
+
+article {
+    position: relative;
+    margin-top: -90vh;
+    padding-bottom: 5em;
+}
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    /* padding-top: 40px;
+    padding-bottom: 20px; */
+}
+h1, h2 {
+      margin-top: 2em;
+}
+
+.seminar-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-self: center;
+    max-width: 1700px;
+    z-index: 0;
+    h3, h4 {
+        justify-self: center;
+        padding-bottom: 10px;
+    }
+
+  }
+  .seminar-container > section {
+      padding: 2em;
+  }
+  section {
+      position: relative;
+      z-index: 0;
+      max-width: 300px;
+  }
+
+.seminar-container::before {
+    content: "";
+    position: absolute;
+    background: var(--purple-blue-gradient);
+    filter: blur(40px);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+@media (min-width: 1000px) {
+    .seminar-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1800px) {
+    .seminar-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+section::before {
+    content: "";
+    position: absolute;
+    background: black;
+    border-radius: 20px;
+    opacity: 0.7;
+    filter: blur(5px);
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
