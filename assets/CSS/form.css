@@ -20,7 +20,7 @@
 .form-wrapper::before {
     content: "";
     position: absolute;
-    background-color: rgba(128, 0, 128, 0.557);
+    background: rgba(128, 0, 128, 0.557);
     filter: blur(50px);
     inset: 0;
     width: 100%;
@@ -33,7 +33,7 @@
 
 .form-black {
     position: relative;
-    padding: 1em 0;
+    padding: 1em 0 2em 0;
     margin: 1em 0;
 }
 
@@ -70,13 +70,17 @@ label, legend {
 }
 
 form input, form textarea {
-    color: black;
+    color: rgb(31, 0, 122);
     font-size: 1.4em;
     border-radius: 7px;
-    padding: 0.3em;
+    padding: 0.7em;
 }
 form, input {
     max-width: 400px;
+}
+
+input {
+    text-transform: capitalize;
 }
 
 fieldset {
@@ -88,43 +92,68 @@ fieldset {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0;
+    & > div {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        gap: 0.5em;
+    }
+    
     input {
-        width: 20px;
-        height: 20px;
-        /* margin: 0 0.5em 0 3em; */
+        width: 23px;
+        height: 23px;
+        accent-color: rgb(176, 61, 176);
     }
-    & > * {
-        padding: 0.5em 0;
+    
+    label {
+        color: rgb(214, 255, 252);
+        padding: 0;
     }
-    /* div:first-child {
-        padding-left: 0;
-    } */
 }
 
 @media (min-width: 500px) {
     .radio-and-checkbox {
         flex-direction: row;
-        /* align-items: flex-start; */
-        /* padding: 0; */
-        & > * {
-            padding: 0.5em 1em;
-        }
-        div:first-child {
-        padding-left: 0;
+        gap: 2em;
+            div:first-child {
+            padding-left: 0;
         }
     }
 }
 
-button {
-    padding: 0.4em 1em;
+.button-animation {
     display: flex;
-    justify-self: center;
-    border: 4px solid white;
+    background: var(--purple-blue-gradient);
+    width: 150px;
+    align-self: center;
+    justify-content: center;
+    height: 50px;
+    /* align-items: center; */
+    /* size: auto; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+    border: 4px solid black;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, background-color 0.3s;
+
+    &:hover {
+        transition: 0.3s ease-out;
+        background: var(--nav-button-hover);
+        transform: scale(1.1);
+    }
+
+     button {
+        border: none;
+        font-size: 2em;
+     }
 }
 
 .error-message {
+    position: absolute;
     visibility: hidden;
+    top: 6em;
 }
 
 input:invalid + .error-message {
