@@ -15,7 +15,7 @@ header {
 }
 
 
-.logo-container {
+/* .logo-container {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -44,6 +44,47 @@ header {
     }
     100% {
         transform: rotate(360deg) scale(1.2);
+    }
+} */
+
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    
+    img {
+        height: 60px;
+        filter: drop-shadow(1px 2px 4px hsl(0, 0%, 0%));
+        transform: rotate(0deg) scale(1);
+        animation:logo-reset 1.5s ease-out forwards;
+    }
+    
+    & img:hover {
+        animation: logo-spin 1s ease-out forwards;
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes logo-spin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes logo-reset {
+    0% {
+        transform: rotate(360deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
     }
 }
 
@@ -97,11 +138,9 @@ nav {
         justify-content: space-between;
     }
     nav > * {
-        /* margin: clamp(0.2em, calc(7.87vw + 8.91px), 2em); */
         margin: 0 clamp(0.2em, 2vw, 2em);
-        /* margin: 0.2em; */
-        /* margin: 2em; */
     }
+
     nav > :last-child {
         margin-right: clamp(0em, 5vw, 5em);
     }
