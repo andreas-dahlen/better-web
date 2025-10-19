@@ -52,19 +52,6 @@ footer::before {
     }
 }
 
-    /* img {
-        height: 60px;
-        filter: drop-shadow(1px 2px 4px hsl(0, 0%, 0%));
-        transform: rotate(0deg) scale(1);
-        animation:logo-reset 1.5s ease-out forwards;
-    }
-    
-    & img:hover {
-        animation: logo-spin 1s ease-out forwards;
-        transform: rotate(360deg) scale(1.2);
-    } */
-
-
 .logo-container-big::before {
     content: "";
     position: absolute;

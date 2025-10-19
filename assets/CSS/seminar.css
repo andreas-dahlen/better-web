@@ -5,7 +5,7 @@ main {
 .hero-container {
     position: relative;
     height: 100vh;
-    background: url(/assets/images/Gemini_Generated_Image_seminar.png) center / cover no-repeat;
+    background: url(../images/Gemini_Generated_Image_seminar.png) center / cover no-repeat;
     z-index: 0;
 }
 
