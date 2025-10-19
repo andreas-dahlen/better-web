@@ -36,6 +36,11 @@
     padding: 1em 0 2em 0;
     margin: 1em 0;
 }
+@media (max-width: 410px) {
+    .form-black {
+        padding-bottom: 3em;
+    }
+}
 
 .form-black::before {
     content: "";
@@ -54,6 +59,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
     & > * {
         margin: 0 1em;
     }
@@ -74,9 +80,18 @@ form input, form textarea {
     font-size: 1.4em;
     border-radius: 7px;
     padding: 0.7em;
-}
-form, input {
-    max-width: 400px;
+    background-color: rgb(182, 207, 229);
+    outline: none;
+    border: 3px solid rgb(69, 3, 162);
+
+    &:hover {
+        border-color: rgb(172, 161, 245);
+    }
+
+    &:focus {
+        background-color: rgb(217, 235, 251);
+        box-shadow: 0 0 0 3px  rgb(68, 142, 127);
+    }
 }
 
 input {
@@ -93,6 +108,7 @@ fieldset {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
+
     & > div {
         display: flex;
         align-items: center;
@@ -104,9 +120,14 @@ fieldset {
         width: 23px;
         height: 23px;
         accent-color: rgb(176, 61, 176);
+        cursor: pointer;
+        &:active {
+            transform: scale(1.3);
+        }
     }
     
     label {
+        cursor: pointer;
         color: rgb(214, 255, 252);
         padding: 0;
     }
@@ -116,7 +137,8 @@ fieldset {
     .radio-and-checkbox {
         flex-direction: row;
         gap: 2em;
-            div:first-child {
+        
+        div:first-child {
             padding-left: 0;
         }
     }
@@ -129,10 +151,6 @@ fieldset {
     align-self: center;
     justify-content: center;
     height: 50px;
-    /* align-items: center; */
-    /* size: auto; */
-    /* justify-content: center; */
-    /* justify-self: center; */
     border: 4px solid black;
     border-radius: 10px;
     cursor: pointer;
@@ -147,6 +165,7 @@ fieldset {
      button {
         border: none;
         font-size: 2em;
+        cursor: pointer;
      }
 }
 
